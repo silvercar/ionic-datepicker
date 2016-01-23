@@ -16,7 +16,7 @@
         inputObj: "=inputObj"
       },
       link: function (scope, element, attrs) {
-        console.info('IONIC-DATEPICKER');
+
         scope.currentMonth = '';
         scope.currentYear = '';
         scope.disabledDates = [];
@@ -56,10 +56,6 @@
           scope.ipDate = new Date();
         }
         scope.selectedDateFull = scope.ipDate;
-
-          console.info('IDP 000 : ',  scope.inputObj.inputDate)
-          console.info('IDP 00  : ',  scope.ipDate)
-
 
         //Setting the months list. This is useful, if the component needs to use some other language.
         scope.monthsList = [];
@@ -211,8 +207,6 @@
         scope.date_selection = {selected: false, selectedDate: '', submitted: false};
         scope.date_selection.selected = true;
         scope.date_selection.selectedDate = scope.ipDate;
-
-        console.info('IDP 1 : ',  scope.ipDate)
 
         scope.dateSelected = function (date) {
           if(!date) return;
