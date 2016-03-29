@@ -2,6 +2,7 @@ angular.module('ionic-datepicker.provider', [])
 
   .provider('ionicDatePicker', function () {
 
+        alert('foo');
     var config = {
       setLabel: 'Set',
       todayLabel: 'Today',
@@ -180,7 +181,7 @@ angular.module('ionic-datepicker.provider', [])
         if ($scope.mainObj.weeksList && $scope.mainObj.weeksList.length === 7) {
           $scope.weeksList = $scope.mainObj.weeksList;
         } else {
-          $scope.weeksList = ['Saaa', 'M', 'T', 'W', 'T', 'F', 'S'];
+          $scope.weeksList = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
         }
         if ($scope.mainObj.mondayFirst) {
           $scope.weeksList.push($scope.mainObj.weeksList.shift());
