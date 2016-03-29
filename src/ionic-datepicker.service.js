@@ -1,39 +1,21 @@
-//By Rajeshwar Patlolla - rajeshwar.patlolla@gmail.com
-//https://github.com/rajeshwarpatlolla
+angular.module('ionic-datepicker.service', [])
 
-(function(){
-  'use strict';
+  .service('IonicDatepickerService', function () {
 
-  angular.module('ionic-datepicker')
-    .service('IonicDatepickerService',IonicDatepickerService);
-
-  IonicDatepickerService.$inject = [];
-  function IonicDatepickerService(){
     this.monthsList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    /**
-     * Get years list
-     */
+    this.getYearsList = function (from, to) {
+      var yearsList = [];
+      var minYear = 1900;
+      var maxYear = 2100;
 
-    this.getYearsList = function(from, to){
-      var yearsList = [],
-          minYear   = 1900,
-          maxYear   = 2100;
-
-      if(from){
-        minYear = new Date(from).getFullYear();
-      }
-
-      if(to){
-        maxYear = new Date(to).getFullYear();
-      }
+      minYear = from ? new Date(from).getFullYear() : minYear;
+      maxYear = to ? new Date(to).getFullYear() : maxYear;
 
       for (var i = minYear; i <= maxYear; i++) {
         yearsList.push(i);
-      };
+      }
 
       return yearsList;
     };
-  }
-
-})();
+  });
