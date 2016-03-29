@@ -8,7 +8,7 @@ angular.module('ionic-datepicker.provider', [])
       closeLabel: 'Close',
       inputDate: new Date(),
       mondayFirst: true,
-      weeksList: ["SXXXX", "M", "T", "W", "T", "F", "S"],
+      weeksList: ["S", "M", "T", "W", "T", "F", "S"],
       monthsList: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
       templateType: 'popup',
       showTodayButton: false,
@@ -180,7 +180,7 @@ angular.module('ionic-datepicker.provider', [])
         if ($scope.mainObj.weeksList && $scope.mainObj.weeksList.length === 7) {
           $scope.weeksList = $scope.mainObj.weeksList;
         } else {
-          $scope.weeksList = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+          $scope.weeksList = ['Saaa', 'M', 'T', 'W', 'T', 'F', 'S'];
         }
         if ($scope.mainObj.mondayFirst) {
           $scope.weeksList.push($scope.mainObj.weeksList.shift());
