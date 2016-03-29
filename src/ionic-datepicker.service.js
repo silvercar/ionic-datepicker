@@ -2,7 +2,7 @@ angular.module('ionic-datepicker.service', [])
 
   .service('IonicDatepickerService', function () {
 
-    this.monthsList = ["January", "February", "Masdfsdfsdrch", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    this.monthsList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     this.getYearsList = function (from, to) {
       var yearsList = [];
