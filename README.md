@@ -25,16 +25,16 @@ Some of this sucks because of the extra hoops you have to jump through.  :(
 # Workflow 2: slightly less terrible
 
 If you want to eliminate a step, in the asf-hybrid/app/bower.json file, change:
+
 ```"ionic-datepicker": "git@github.com:silvercar/ionic-datepicker.git#master"```
+
 to
+
 ```"ionic-datepicker": "file:///Users/demos/Documents/Projects/ionic-datepicker/.git#master"```
+
 except change that file path to wherever your ionic-datepicker is on your Mac.  Then, you can do Workflow 1 but skip step 4 because it's looking in your local repo, rather than the one on github, so no push is necessary.
 
 
 # Workflow 3: good (under construction
 
 Should be that just modifying files in ionic-datepicker rebuilds everything for you, but I'm still working on that as a side project so it'll probably never happen.
-
--- 
-
-I'm not going to update my ionic-datepicker repo (nor should we build to qa4) until you say all your changes work and are what you want.  But you should commit as often as necessary even if it temporarily breaks the calendar because you have to work that way.  Having to do commits every time are because I don't have all the bower crap the best way it could be.
