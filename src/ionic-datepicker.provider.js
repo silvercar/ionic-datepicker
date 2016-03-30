@@ -2,7 +2,7 @@ angular.module('ionic-datepicker.provider', [])
 
   .provider('ionicDatePicker', function () {
 
-        alert('AAAAAAAAAAA!!!!');
+        alert('BBBBB!!!!');
     var config = {
       setLabel: 'Set',
       todayLabel: 'Today',
