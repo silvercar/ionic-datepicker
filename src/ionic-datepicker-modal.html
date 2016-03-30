@@ -65,14 +65,14 @@
   </ion-content>
   <ion-footer-bar class="footer">
     <div class="row padding_zero">
-      <button class="button button-clear button-block button_set" ng-if="!mainObj.closeOnSelect"
-              ng-click="setIonicDatePickerDate()">Set
+      <button class="button button-clear button-block button_close"
+              ng-click="closeIonicDatePickerModal()">Cancel
       </button>
       <button class="button button-clear button-block button_today"  ng-if="mainObj.showTodayButton"
               ng-click="setIonicDatePickerTodayDate()">Today
       </button>
-      <button class="button button-clear button-block button_close"
-              ng-click="closeIonicDatePickerModal()">Close
+      <button class="button button-clear button-block button_set" ng-if="!mainObj.closeOnSelect"
+              ng-click="setIonicDatePickerDate()">Save
       </button>
     </div>
   </ion-footer-bar>
