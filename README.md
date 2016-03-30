@@ -37,4 +37,4 @@ except change that file path to wherever your `ionic-datepicker/` is on your Mac
 
 # Workflow 3: good (under construction)
 
-Should be that just modifying files in ionic-datepicker rebuilds everything for you, but I'm still working on that as a side project so it'll probably never happen.
+Should be that just modifying files in `ionic-datepicker/` rebuilds everything for you, but I'm still working on that as a side project so it'll probably never happen.
